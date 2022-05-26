@@ -1,0 +1,12 @@
+FROM node:alpine
+
+WORKDIR /usr/app
+
+# RUN npm install --global yarn
+
+COPY package.json .
+
+RUN yarn
+
+CMD ["yarn", "start"]
+
