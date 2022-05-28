@@ -1,0 +1,32 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/node:14.19
+        # auth:
+        #   username: mydockerhub-user
+        #   password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout
+      - run: node --version
+      # ... steps for building/testing app ...
+
+      - setup_remote_docker:
+          version: 20.10.14
+          docker_layer_caching: true
+      # run build
+      - run: ls
+      - run:
+          name: build docker image from dckerfile.dev
+          command: docker build -f Dockerfile.dev -t rtrvl/test-build:latest .
+      # run mah test
+      - run:
+          name: create container and run test
+          command: docker run rtrvl/test-build yarn test
+
+      # # build and push Docker image
+      # - run: |
+      #     TAG=0.1.$CIRCLE_BUILD_NUM
+      #     docker build -t CircleCI-Public/circleci-demo-docker:$TAG .
+          # echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+          # docker push CircleCI-Public/circleci-demo-docker:$TAG
