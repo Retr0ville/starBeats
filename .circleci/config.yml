@@ -23,6 +23,7 @@ jobs:
       - run:
           name: create container and run test
           command: docker run -it rtrvl/test-build npm run test
+      - run: ls
 
       # # build and push Docker image
       # - run: |
