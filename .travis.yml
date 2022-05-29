@@ -1,4 +1,4 @@
-sudo required
+sudo: required
 services:
   - docker
 
@@ -6,4 +6,4 @@ before_install:
   - docker build -t rtrvl/starbeats:latest -f Dockerfile.dev .
 
 scripts:
-  - docker run rtrvl/starbeats yarn test -- --coverage
+  - docker run rtrvl/starbeats yarn test --coverage
