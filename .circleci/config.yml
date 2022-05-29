@@ -22,7 +22,7 @@ jobs:
       # run mah test
       - run:
           name: create container and run test
-          command: docker run rtrvl/test-build yarn test
+          command: docker run rtrvl/test-build npm run  test
 
       # # build and push Docker image
       # - run: |
