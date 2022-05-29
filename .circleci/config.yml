@@ -22,8 +22,7 @@ jobs:
       # run mah test
       - run:
           name: create container and run test
-          command: docker run rtrvl/test-build
-      - run: ls
+          command: docker run rtrvl/test-build yarn test -- --coverage
 
       # # build and push Docker image
       # - run: |
