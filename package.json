@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "s": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=node --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
