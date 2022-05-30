@@ -18,6 +18,5 @@ deploy:
   bucket_path: "Starbeats"
   on:
     branch: master
-  access_key_id: "$AWS-ACCESS_KEY"
-  secret_access_key: 
-    secure: "$AWS-SECRET_KEY"
+  access_key_id: \$AWS-ACCESS_KEY
+  secret_access_key: \$AWS-SECRET_KEY
