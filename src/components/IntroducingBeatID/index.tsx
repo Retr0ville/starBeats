@@ -25,7 +25,7 @@ const IntroducingBeatID = () => (
             </div>
           </div>
         </div>
-        {/* <div className="">parts</div> */}
+        <div className="">parts</div>
       </section>
     </div>
   </div>
