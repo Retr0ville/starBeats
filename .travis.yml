@@ -14,10 +14,9 @@ deploy:
   region: "us-east-1"
   app: "Starbeats"
   env: "Starbeats-env"
-  bucket_name: elasticbeanstalk-us-east-1-398485943999
-  bucket: "Starbeats"
+  bucket: elasticbeanstalk-us-east-1-398485943999
+  bucket_path: "Starbeats"
   on:
     branch: master
   access_key_id: $AWS-ACCESS_KEY
-  secret_access_key: 
-    secure: "$AWS-ACCESS_KEY"
+  secret_access_key: $AWS-ACCESS_KEY
