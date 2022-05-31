@@ -55,5 +55,5 @@ workflows:
               only:
                 - master
                 - feature
-          requires:
-            - testme
+         # requires:
+           # - testme
