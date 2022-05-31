@@ -31,7 +31,7 @@ jobs:
         - run:
             working_directory: /
             name: install ebcli
-            command: sudo pip3 install awsebcli --upgrade --user
+            command: pip3 install awsebcli --upgrade --user
         - run: eb --version
         - run:
             name: deploy with ebcli
