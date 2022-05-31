@@ -33,6 +33,7 @@ jobs:
             name: install ebcli
             command: pip3 install awsebcli --upgrade --user
         - run: eb --version
+        - run: ls
         - run:
             name: deploy with ebcli
             command: eb deploy Starbeats-$CIRCLE_BRANCH
@@ -46,7 +47,7 @@ jobs:
 workflows:
   test-then-deploy:
     jobs:
-      - testme
+    #  - testme
       - deployme:
           context: aws-creds
           filters:
