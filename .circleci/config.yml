@@ -26,14 +26,13 @@ jobs:
       docker:
        - image: cimg/python:3.10
       steps:
+        - checkout
         - run: pip3 --version
-        - run: pip list
         - run:
             working_directory: /
             name: install ebcli
             command: pip3 install awsebcli --upgrade --user
         - run: eb --version
-        - run: ls
         - run:
             name: deploy with ebcli
             command: eb deploy Starbeats-$CIRCLE_BRANCH
@@ -47,13 +46,13 @@ jobs:
 workflows:
   test-then-deploy:
     jobs:
-    #  - testme
+      - testme
       - deployme:
           context: aws-creds
           filters:
             branches:
               only:
                 - master
-                - feature
-         # requires:
-           # - testme
+                - feature1
+          requires:
+            - testme
