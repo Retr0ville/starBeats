@@ -27,6 +27,7 @@ jobs:
        - image: cimg/python:3.10
       steps:
         - run: pip3 --version
+        - run: pip list
         - run:
             working_directory: /
             name: install ebcli
