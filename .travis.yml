@@ -9,14 +9,14 @@ before_install:
 
 script:
   - docker run rtrvl/starbeats yarn test --coverage --watchAll=false
-deploy:
-  provider: elasticbeanstalk
-  region: "us-east-1"
-  app: "Starbeats"
-  env: "Starbeats-env"
-  bucket: elasticbeanstalk-us-east-1-398485943999
-  bucket_path: "Starbeats"
-  on:
-    branch: master
-  access_key_id: $AWS_ACCESS_ID
-  secret_access_key: $AWS_SECRET_KEY
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-east-1"
+#   app: "Starbeats"
+#   env: "Starbeats-env"
+#   bucket: elasticbeanstalk-us-east-1-398485943999
+#   bucket_path: "Starbeats"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_ID
+#   secret_access_key: $AWS_SECRET_KEY

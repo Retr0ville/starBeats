@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build:
+  testme:
     docker:
       - image: cimg/node:14.19
         # auth:
@@ -10,7 +10,6 @@ jobs:
       - checkout
       - run: node --version
       # ... steps for building/testing app ...
-
       - setup_remote_docker:
           version: 20.10.14
           docker_layer_caching: true
@@ -23,6 +22,19 @@ jobs:
       - run:
           name: create container and run test
           command: docker run rtrvl/test-build yarn test --coverage --watchAll=false
+  deployme:
+      docker:
+        image: cimg/python:3.10
+      steps:
+        - run: pip3 --version
+        - run:
+            working_directory: /
+            name: install ebcli
+            command: sudo pip3 install awsebcli --upgrade --user
+        - run: eb --version
+        - run:
+            name: deploy with ebcli
+            command: eb deploy Starbeats-$CIRCLE_BRANCH
 
       # # build and push Docker image
       # - run: |
@@ -30,3 +42,16 @@ jobs:
       #     docker build -t CircleCI-Public/circleci-demo-docker:$TAG .
           # echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
           # docker push CircleCI-Public/circleci-demo-docker:$TAG
+workflows:
+  test-then-deploy:
+    jobs:
+      - testme
+      - deployme:
+          context: aws-creds
+          filters:
+            branches:
+              only:
+                - master
+                - feature
+          requires:
+            - testme
