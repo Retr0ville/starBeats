@@ -24,7 +24,7 @@ jobs:
           command: docker run rtrvl/test-build yarn test --coverage --watchAll=false
   deployme:
       docker:
-        image: cimg/python:3.10
+       - image: cimg/python:3.10
       steps:
         - run: pip3 --version
         - run:
