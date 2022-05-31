@@ -7,3 +7,5 @@ In the project directory, you can run:
 ### `yarn test`
 
 ### `yarn build`
+aws hosted
+http://starbeats-master.us-east-1.elasticbeanstalk.com/
