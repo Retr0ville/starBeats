@@ -53,6 +53,5 @@ workflows:
             branches:
               only:
                 - master
-                - feature1
           requires:
             - testme
