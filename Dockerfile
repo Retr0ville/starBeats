@@ -2,15 +2,15 @@ FROM node:alpine as builder
 
 WORKDIR /usr/app
 
-# COPY package.json .
+COPY package.json .
 
-# RUN yarn
-
-# COPY . .
-
-# RUN yarn build
+RUN yarn
 
 COPY . .
+
+RUN yarn build
+
+# COPY . .
 
 
 FROM nginx as run
