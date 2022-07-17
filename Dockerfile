@@ -9,7 +9,8 @@ WORKDIR /usr/app
 # COPY . .
 
 # RUN yarn build
-COPY /build .
+
+COPY build .
 
 
 FROM nginx as run
