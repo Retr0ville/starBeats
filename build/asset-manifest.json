@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f67b58d4.css",
+    "main.js": "/static/js/main.c91a14cc.js",
+    "static/media/bebas-neue-regular.woff": "/static/media/bebas-neue-regular.558c0b09724cc2d2f36f.woff",
+    "index.html": "/index.html",
+    "main.f67b58d4.css.map": "/static/css/main.f67b58d4.css.map",
+    "main.c91a14cc.js.map": "/static/js/main.c91a14cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f67b58d4.css",
+    "static/js/main.c91a14cc.js"
+  ]
+}
