@@ -1,0 +1,26 @@
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-r {
+  transform: translateX(100%);
+  animation: marquee-r 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-r {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

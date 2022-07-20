@@ -1,4 +1,6 @@
 import React from 'react';
+import Marquee from './marquee';
+import Mouse from './mouse';
 
 const IntroducingBeatID = () => (
   <div id="hero" className="tw-w-full tw-flex tw-items-center">
@@ -30,7 +32,15 @@ const IntroducingBeatID = () => (
             </div>
           </div>
         </div>
-        <aside className="tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-w-full tw-bg-slate-50">parts1</aside>
+        <aside className="tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-w-full">
+          <div className="tw-flex tw-justify-center tw-w-full">
+            <Mouse />
+          </div>
+          <div className="tw-relative tw-min-h-[80px] tw-mb-11 tw-overflow-hidden tw-min-w-[1811.92px]">
+            <Marquee />
+          </div>
+        </aside>
+
       </section>
     </div>
   </div>
