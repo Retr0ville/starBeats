@@ -32,11 +32,11 @@ const IntroducingBeatID = () => (
             </div>
           </div>
         </div>
-        <aside className="tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-w-full">
+        <aside className="tw-absolute tw-overflow-hidden tw-bottom-0 tw-left-0 tw-right-0 tw-w-full">
           <div className="tw-flex tw-justify-center tw-w-full">
             <Mouse />
           </div>
-          <div className="tw-relative tw-min-h-[80px] tw-mb-11 tw-overflow-hidden tw-min-w-[1811.92px]">
+          <div className="tw-relative tw-min-h-[80px] md:tw-min-w-[2794.44px] md:tw-mb-0 md:tw-min-h-[120px]  tw-mb-11 tw-overflow-hidden tw-min-w-[1811.92px]">
             <Marquee />
           </div>
         </aside>
