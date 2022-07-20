@@ -7,7 +7,7 @@ const IntroducingBeatID = () => (
     <div className=" tw-w-full ">
       <section className="tw-relative md:tw-px-8 tw-px-4 tw-flex tw-flex-col tw-pb-20 tw-w-full">
         <div className="tw-absolute tw-top-0 tw-bottom-[50%] tw-left-0 tw-right-0 tw-bg-gradient-to-b tw-from-[hsla(0,0%,100%,0.64)] tw-to-[hsla(0,0%,100%,0)] tw-opacity-20" />
-        <div className="center tw-pt-6 tw-pb-[167px] tw-w-full">
+        <div className="center tw-pt-6 tw-pb-[120px] tw-w-full">
           <div className="tw-container lg:tw-grid-rows-1 tw-w-full tw-max-w-[1360px] tw-grid tw-grid-cols-12 tw-gap-y-8">
             <div className="tw-w-full tw-col-span-12 lg:tw-col-span-6 tw-order-2 lg:tw-order-1">
               <div className="tw-inline-flex tw-w-full tw-items-center tw-justify-center md:tw-justify-start">
@@ -36,11 +36,10 @@ const IntroducingBeatID = () => (
           <div className="tw-flex tw-justify-center tw-w-full">
             <Mouse />
           </div>
-          <div className="tw-relative tw-min-h-[80px] md:tw-min-w-[2794.44px] md:tw-mb-0 md:tw-min-h-[120px]  tw-mb-11 tw-overflow-hidden tw-min-w-[1811.92px]">
+          <div className="tw-relative tw-min-h-[80px] md:tw-min-w-[2794.44px] md:tw-min-h-[120px]  tw-mb-11 md:tw-mb-0  tw-min-w-[1811.92px]">
             <Marquee />
           </div>
         </aside>
-
       </section>
     </div>
   </div>
