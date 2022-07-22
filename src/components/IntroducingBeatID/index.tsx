@@ -41,6 +41,14 @@ const IntroducingBeatID = () => (
           </div>
         </aside>
       </section>
+      <div className="tw-px-0 md:tw-py-20 tw-py-12 2xlalt:tw-py-32 tw-bg-[#0a0a09]">
+        <div className="tw-relative tw-overflow-hidden tw-w-full tw-p-[0px 15px 15px] ssm:tw-p-[0px 24px 20px] sxlalt:tw-p-[0px 0px 30px]">
+          <div className="tw-w-full tw-max-w-[1300px] tw-m-auto ">
+            <div className="tw-mb-12 2xlalt:tw-mb-20">d</div>
+            <div className=" t">d</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );

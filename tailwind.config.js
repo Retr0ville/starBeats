@@ -9,7 +9,9 @@ module.exports = {
         primary: "#141414",
       },
       screens: {
+        'ssm': "480px",
         'xlalt': "1200px",
+        'sxlalt': "1348px",
         '2xlalt': "1400px",
       },
     },
