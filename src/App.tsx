@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="">
       <Header />
-      <div className="main-content">
+      <div className="main-content tw-pt-[113px] md:tw-pt-[65px] lg:tw-pt-[113px]">
         <IntroducingBeatID />
       </div>
     </div>

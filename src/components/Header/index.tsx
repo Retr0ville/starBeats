@@ -7,7 +7,7 @@ import WideNavbar from './WideNavBar';
 import SearchInput from './SearchInput';
 
 const Header = () => (
-  <>
+  <div className="tw-fixed tw-w-full tw-z-[99]">
     <div className="main-header tw-w-full center tw-bg-primary tw-px-4 md:tw-px-8 tw-h-16">
       <div className="tw-container tw-max-w-[1360px] tw-w-full tw-flex tw-nowrap tw-justify-between">
         <div className="left-nav-items tw-flex tw-items-center  tw-nowrap tw-bg-transparent">
@@ -66,6 +66,6 @@ const Header = () => (
       </div>
     </div>
     <WideNavbar />
-  </>
+  </div>
 );
 export default Header;
