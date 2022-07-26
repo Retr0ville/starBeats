@@ -13,6 +13,7 @@ module.exports = {
         'xlalt': "1200px",
         'sxlalt': "1348px",
         '2xlalt': "1400px",
+        '3xlalt': "1600px",
       },
     },
   },
