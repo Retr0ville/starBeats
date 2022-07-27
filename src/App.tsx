@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Faq from './components/FAQ/Faq';
 import Header from './components/Header';
 import IntroducingBeatID from './components/IntroducingBeatID';
 import Members from './components/Members';
@@ -15,6 +16,7 @@ function App() {
         <Revolution />
         <Start />
         <Members />
+        <Faq />
       </div>
     </div>
   );
