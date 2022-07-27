@@ -10,6 +10,7 @@ module.exports = {
       },
       screens: {
         'ssm': "480px",
+        '2md': "960px",
         'xlalt': "1200px",
         'sxlalt': "1348px",
         '2xlalt': "1400px",
