@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import IntroducingBeatID from './components/IntroducingBeatID';
+import Members from './components/Members';
 import Revolution from './components/Revolution';
 import Start from './components/Start';
 
@@ -13,6 +14,7 @@ function App() {
         <IntroducingBeatID />
         <Revolution />
         <Start />
+        <Members />
       </div>
     </div>
   );
