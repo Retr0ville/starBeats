@@ -44,7 +44,7 @@ const Faq = () => {
           {faqBeatId.map((f) => (
             <div className="tw-mb-4">
               <div
-                className={`tw-transition-all ${
+                className={`tw-transition-all tw-duration-1000 ${
                   activeFaq === f.title ? "tw-max-h-[400px]" : "tw-max-h-[58px]"
                 } tw-bg-[#141414] tw-rounded-lg tw-w-full tw-overflow-hidden`}
               >
