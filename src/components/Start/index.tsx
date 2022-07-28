@@ -23,10 +23,15 @@ const Start = () => (
                 START TRACKING YOUR MUSIC
               </h2>
               <p className="tw-font-light tw-text-[14px] tw-tracking-[.2px] tw-mb-[24px] tw-leading-6 tw-text-[#9f9f9f] md:tw-max-w-[495px] md:tw-mx-auto md:tw-text-[16px] md:tw-leading-7">
-                Manage all of your content in one place and view insights into
-                where your content is used
+                Never gonna tell a lie and hurt you Never gonna give you up,
+                Never gonna let you down
               </p>
-              <Buttn classNames="tw-inline-block tw-justify-[unset] md:tw-justify-[unset]" color="#005ff8">Get Started</Buttn>
+              <Buttn
+                classNames="tw-inline-block tw-justify-[unset] md:tw-justify-[unset]"
+                color="#005ff8"
+              >
+                Get Started
+              </Buttn>
             </div>
           </section>
         </div>

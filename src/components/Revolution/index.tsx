@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
-import React from 'react';
+// eslint-disable-next-line quotes
+import React from "react";
 
 const Revolution = () => (
   <div>
@@ -31,10 +32,12 @@ const Revolution = () => (
               A Revolutionary Music Identification Tool for Creators
             </h2>
             <p className="tw-text-[#9f9f9f] tw-font-light tw-text-[14px] tw-leading-[24px] tw-tracking-[.2px]  md:tw-text-[16px] md:tw-leading-7 ">
-              From producers, to artists, to record labels, to music publishers
-              - Beat ID changes the game for all creators alike. With Beat ID,
-              you'll have access to data and information on where and how your
-              copyrights are being used across global social applications.
+              You know the rules and so do I, A full commitment's what I'm
+              thinking of You wouldn't get this from any other guy, I just wanna
+              tell you how I'm feeling
+              <br />
+              Gotta make you understand, Never gonna give you up Never
+              gonna let you down. Never gonna run around and desert you.
             </p>
           </div>
         </div>

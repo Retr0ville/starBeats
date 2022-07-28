@@ -5,27 +5,27 @@ const faqBeatId = [
   {
     title: "What is Beat ID?",
     description:
-      "Beat ID is a revolutionary content identification system that empowers creators with data and information regarding where and how their copyrights are being used across the social web.\nYou are able to upload a track and we’ll scan social platforms including YouTube, Facebook, Twitch, Instagram, Reddit, TikTok, and many more. We’ll then link you to every place it appears on these platforms.",
+      "Never gonna make you cry, Never gonna say goodbye Never gonna tell a lie and hurt you, We've known each other for so long, Your heart's been aching, but you're too shy to say it.\nInside, we both know what's been going on, We know the game, and we're gonna play it And if you ask me how I'm feeling. Don't tell me you're too blind to see.",
   },
   {
     title: "Is Beat ID just for beats or can I upload my songs?",
     description:
-      "You are able to upload both songs and beats to Beat ID. Beat ID will scan the social web for uses of both types of content.",
+      "Never gonna give you up, Never gonna let you down Never gonna run around and desert you, Never gonna make you cry Never gonna say goodbye, Never gonna tell a lie and hurt you.",
   },
   {
     title: "Where does Beat ID track your music?",
     description:
-      "Beat ID will be able to find uses of your beats/songs on YouTube, Apple Podcasts, Audiomack, Dailymotion, TikTok, Instagram, Spotify Podcasts, Twitter, Datpiff, Facebook, Gfycat, Giphy, Imgur, LiveLeak, MixCloud, My Mixtapez, Oddshot, OK, Pear-video, Reddit, Soundcloud, Streamable, Tenor, Triller, Twitch, Twitch Clips, Vimeo, VK",
+      "Never gonna give you up, Never gonna let you down Never gonna run around and desert you Never gonna make you cry \n Never gonna say goodbye, Never gonna tell a lie and hurt you.",
   },
   {
     title: "Who would benefit from using Beat ID?",
     description:
-      "Music producers, recording artists, record labels, music publishers, and anyone who owns music copyrights would benefit from using Beat ID.",
+      "We've known each other for so long Your heart's been aching, but you're too shy to say it Inside, we both know what's been going on.",
   },
   {
     title: "How is Beat ID different from YouTube Content ID?",
     description:
-      "While YouTube Content ID only checks for uses of your tracks on YouTube, Beat ID scans the entire social web, including YouTube, and provides you with links to show you where your music is being used.",
+      "I just wanna tell you how I'm feeling, Gotta make you understand Never gonna give you up Never gonna let you down Never gonna run around and desert you,Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you.",
   },
 ];
 
@@ -44,7 +44,7 @@ const Faq = () => {
           {faqBeatId.map((f) => (
             <div className="tw-mb-4">
               <div
-                className={`tw-transition-all tw-duration-1000 ${
+                className={`tw-transition-all tw-duration-500 ${
                   activeFaq === f.title ? "tw-max-h-[400px]" : "tw-max-h-[58px]"
                 } tw-bg-[#141414] tw-rounded-lg tw-w-full tw-overflow-hidden`}
               >
