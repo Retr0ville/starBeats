@@ -140,7 +140,7 @@ const Footer = () => {
                 <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube />
+                      <FaYoutube className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[linear-gradient(180deg,_#282828,_#282828),_linear-gradient(180deg_#5555554d_#2b2b2b29)] tw-shadow-[0_1px_3px_0_#00000029] lg:tw-bg-[transparent]" />
                       <span className="tw-hidden lg:tw-flex">
                         Youtube
                       </span>
@@ -148,7 +148,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaInstagram />
+                      <FaInstagram className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[linear-gradient(180deg,_#282828,_#282828),_linear-gradient(180deg_#5555554d_#2b2b2b29)] tw-shadow-[0_1px_3px_0_#00000029] lg:tw-bg-[transparent]" />
                       <span className="tw-hidden lg:tw-flex">
                         instagram
                       </span>
@@ -156,7 +156,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaFacebookF />
+                      <FaFacebookF className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[linear-gradient(180deg,_#282828,_#282828),_linear-gradient(180deg_#5555554d_#2b2b2b29)] tw-shadow-[0_1px_3px_0_#00000029] lg:tw-bg-[transparent]" />
                       <span className="tw-hidden lg:tw-flex">
                         Facebook
                       </span>
@@ -164,7 +164,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaTwitter />
+                      <FaTwitter className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[linear-gradient(180deg,_#282828,_#282828),_linear-gradient(180deg_#5555554d_#2b2b2b29)] tw-shadow-[0_1px_3px_0_#00000029] lg:tw-bg-[transparent]" />
                       <span className="tw-hidden lg:tw-flex">
                         Twitter
                       </span>
@@ -172,7 +172,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaSoundcloud />
+                      <FaSoundcloud className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[linear-gradient(180deg,_#282828,_#282828),_linear-gradient(180deg_#5555554d_#2b2b2b29)] tw-shadow-[0_1px_3px_0_#00000029] lg:tw-bg-[transparent]" />
                       <span className="tw-hidden lg:tw-flex">
                         Soundcloud
                       </span>
