@@ -35,16 +35,90 @@ const Footer = () => {
           </section>
         </div>
         <div>
-          <div>
-            <div>
-              <section>
-                frodo
-              </section>
-            </div>
+          {/* Start 'er */}
+          <div className="tw-hidden">
+            <section className="tw-text-white tw-flex tw-flex-col lg:tw-flex-row">
+              <div>
+                <h1>
+                  Take Beats on the GO!
+                </h1>
+                <div>
+                  <a href="/">
+                    <img src="/images/appstore.png" alt="apple" />
+                  </a>
+                  <a href="/">
+                    <img src="/images/googleplay.png" alt="gplay" />
+                  </a>
+                </div>
+              </div>
+              <div className="tw-flex tw-flex tw-flex-col lg:tw-flex-row">
+                <div>
+                  <section>
+                    <header>
+                      Beatstars
+                    </header>
+                    <div>
+                      <ul>
+                        <li><a href="/">About Us</a></li>
+                        <li><a href="/">Jobs</a></li>
+                        <li><a href="/">Merch</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">Beatstart.World</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div>
+                  <section>
+                    <header>
+                      Support
+                    </header>
+                    <div>
+                      <ul>
+                        <li><a href="/">Prices</a></li>
+                        <li><a href="/">Start Selling</a></li>
+                        <li><a href="/">Sign up</a></li>
+                        <li><a href="/">Login</a></li>
+                        <li><a href="/">Helpdesk</a></li>
+                        <li><a href="/">Contact us</a></li>
+                        <li><a href="/">Do Not Sell My Personal Information</a></li>
+                        <li><a href="/">GDPR</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div>
+                  <section>
+                    <header>
+                      Press
+                    </header>
+                    <div>
+                      <ul>
+                        <li><a href="/">Billlboard</a></li>
+                        <li><a href="/">Vulture</a></li>
+                        <li><a href="/">Forbes</a></li>
+                        <li><a href="/">Complex</a></li>
+                        <li><a href="/">Genius</a></li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div>
+                <h1>Social Media</h1>
+                <ul>
+                  <li><a href="/">Youtube</a></li>
+                  <li><a href="/">instagram</a></li>
+                  <li><a href="/">Facebook</a></li>
+                  <li><a href="/">Twitter</a></li>
+                  <li><a href="/">Soundcloud</a></li>
+                </ul>
+              </div>
+            </section>
           </div>
         </div>
-        <div>Copy</div>
       </div>
+      <div>Copy</div>
     </div>
   );
 };
