@@ -51,7 +51,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="tw-flex tw-flex tw-flex-col lg:tw-flex-row">
+              <div className="tw-flex tw-flex-col lg:tw-flex-row">
                 <div>
                   <section>
                     <header>
