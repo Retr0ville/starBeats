@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Discover from './components/Discover';
 import Faq from './components/FAQ/Faq';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import IntroducingBeatID from './components/IntroducingBeatID';
 import Members from './components/Members';
@@ -19,6 +20,7 @@ function App() {
         <Members />
         <Faq />
         <Discover />
+        <Footer />
       </div>
     </div>
   );

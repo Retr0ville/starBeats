@@ -9,8 +9,8 @@ export default function DropdownButton({ className = '', text, children } : {cla
         {children && children}
         {text && text}
       </span>
-      <span className="lg:tw-flex tw-hidden tw-items-center tw-relative tw-top-[2.4px] tw-ml-2 tw-text-[8px]">
-        <FaChevronDown />
+      <span className="lg:tw-flex tw-hidden tw-items-center tw-relative tw-top-[1.5px] tw-ml-2 tw-text-[8px]">
+        <FaChevronDown size={10} />
       </span>
     </button>
   );

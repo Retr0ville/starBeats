@@ -44,14 +44,14 @@ const Header = () => (
               <span className="center tw-whitespace-nowrap">Sign in</span>
             </button>
             <div className="center">
-              <a href="#" className="center tw-hidden md:tw-flex tw-text-[12px] tw-font-medium tw-text-center tw-text-[#fff] tw-rounded-[5px] tw-p-[7px_12px] tw-cursor-pointer tw-bg-[#005ff8] hover:tw-bg-[#0b8aaf]">
+              <a href="#" className="center tw-hidden md:tw-flex tw-text-[12px] tw-text-center tw-text-[#fff] tw-rounded-[5px] tw-p-[7px_12px] tw-cursor-pointer tw-bg-[#005ff8] hover:tw-bg-[#0b8aaf]">
                 <span className="center tw-whitespace-nowrap ">Start Selling</span>
               </a>
             </div>
           </div>
           <div className="cart [grid-area:cart]">
             <DropdownButton>
-              <FaCartPlus />
+              <FaCartPlus size={18} className="tw-text-[#fff]" />
             </DropdownButton>
           </div>
         </div>

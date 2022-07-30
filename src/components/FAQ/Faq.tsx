@@ -1,5 +1,6 @@
 /* eslint-disable quotes */
 import React, { useState } from "react";
+import { FaChevronDown } from "react-icons/fa";
 
 const faqBeatId = [
   {
@@ -44,15 +45,14 @@ const Faq = () => {
           {faqBeatId.map((f) => (
             <div className="tw-mb-4">
               <div
-                className={`tw-transition-all tw-duration-500 ${
-                  activeFaq === f.title ? "tw-max-h-[400px]" : "tw-max-h-[58px]"
+                className={`tw-transition-all tw-duration-500 ${activeFaq === f.title ? "tw-max-h-[400px]" : "tw-max-h-[58px]"
                 } tw-bg-[#141414] tw-rounded-lg tw-w-full tw-overflow-hidden`}
               >
                 <article className="tw-flex tw-flex-col">
                   <div
                     role="button"
                     tabIndex={-1}
-                    onKeyDown={() => {}}
+                    onKeyDown={() => { }}
                     onClick={() => (
                       activeFaq === f.title
                         ? setActiveFaq("")
@@ -65,7 +65,10 @@ const Faq = () => {
                       className="tw-p-0 tw-m-0 tw-flex tw-items-center tw-text-white tw-text-xs tw-tracking-normal tw-leading-6 tw-font-medium tw-border-none tw-border-0 tw-w-auto tw-overflow-visible tw-bg-transparent tw-cursor-pointer"
                       type="button"
                     >
-                      <i className={`tw-text-inherit tw-ml-2 tw-text-[16px] tw-transition-transform ${activeFaq === f.title ? 'tw-rotate-0' : 'tw-rotate-[-180deg]'}`}>^</i>
+                      <i className={`tw-text-inherit tw-ml-2 tw-text-[16px] tw-transition-transform ${!(activeFaq === f.title) ? 'tw-rotate-0' : 'tw-rotate-[-180deg]'}`}>
+                        {' '}
+                        <FaChevronDown size={15} className="tw-text-[#fff6]" />
+                      </i>
                     </button>
                   </div>
                   <div className="tw-p-4 ">
