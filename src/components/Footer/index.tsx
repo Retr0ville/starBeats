@@ -1,9 +1,23 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useEffect, useState } from 'react';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaArrowDown, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   const [mail, setMail] = useState('');
   const [validMail, setValidMail] = useState(false);
+  const [arrSection, setArrSection] = useState('');
+  const [showSection, setShowSection] = useState(() => window.innerWidth > 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowSection(window.innerWidth > 1024);
+      setArrSection('');
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(
     () => {
@@ -34,84 +48,99 @@ const Footer = () => {
             </div>
           </section>
         </div>
-        <div className="tw-pb-0 sxlalt:">
+        <div className="tw-pb-0 sxlalt:tw-p-[0_0_30px] ssm:tw-p-[0_24px_20px] tw-relative tw-w-full tw-p-[0_15px_15px] tw-overflow-hidden tw-border-b-[1px] tw-border-b-solid tw-border-[#ffffff1f] lg:tw-border-b-0 lg:tw-border-none">
           {/* Start 'er */}
-          <div className="">
-            <section className="tw-text-white tw-flex tw-flex-col lg:tw-flex-row">
-              <div>
-                <h1>
+          <div className="tw-w-full tw-max-w-1300px tw-m-auto">
+            <section className="tw-flex tw-items-start tw-flex-col lg:tw-flex-row tw-p-[40px_0] lg:tw-p-[48px_0_80px] tw-max-w-[320px] lg:tw-max-w-none tw-m-[0_auto] tw-border-b-0 tw-border-none lg:tw-m-0 lg:tw-border-b-[1px] lg:tw-border-b-solid lg:tw-border-[#ffffff1f] ">
+              <div className="tw-flex tw-justify-center tw-flex-col lg:tw-order-1 tw-order-2 tw-w-full lg:tw-w-unset tw-mb-8 lg:tw-mb-[unset] ">
+                <h1 className="tw-hidden lg:tw-block tw-mb-4 tw-whitespace-nowrap tw-p-0 tw-text-[17px] tw-font-medium tw-leading-[1.65] tw-tracking-[.2px] tw-text-white">
                   Take Beats on the GO!
                 </h1>
-                <div>
-                  <a href="/">
+                <div className="lg:tw-flex-col tw-flex tw-justify-between tw-w-full">
+                  <a href="/" className="lg:tw-m-[0_0_16px] tw-mr-2 lg:tw-w-[162px] tw-w-[145px] lg:tw-h-12 tw-h-[43px]">
                     <img src="/images/appstore.png" alt="apple" />
                   </a>
-                  <a href="/">
+                  <a href="/" className="lg:tw-w-[162px] tw-w-[145px] lg:tw-h-12 tw-h-[43px]">
                     <img src="/images/googleplay.png" alt="gplay" />
                   </a>
                 </div>
               </div>
-              <div className="tw-flex tw-flex-col lg:tw-flex-row ">
+              <div className="tw-flex tw-flex-col lg:tw-flex-row tw-order-1 lg:tw-order-2 tw-mb-4 lg:tw-mb-[unset] tw-w-full tw-justify-evenly">
                 <div>
                   <section>
-                    <header>
-                      Beatstars
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => setArrSection('beats')}>
+                      <div className="tw-flex tw-items-center tw-justify-between">
+                        <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
+                          Beatstars
+                        </h2>
+                      </div>
+                      <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'beats' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div>
-                      <ul>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/">Jobs</a></li>
-                        <li><a href="/">Merch</a></li>
-                        <li><a href="/">Blog</a></li>
-                        <li><a href="/">Beatstart.World</a></li>
+                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'beats')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
+                      <ul className="tw-mb-4">
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">About Us</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Jobs</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Merch</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Blog</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px]"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Beatstart.World</a></li>
                       </ul>
                     </div>
                   </section>
                 </div>
                 <div>
                   <section>
-                    <header>
-                      Support
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => setArrSection('supp')}>
+                      <div className="tw-flex tw-items-center tw-justify-between">
+                        <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
+                          Support
+                        </h2>
+                      </div>
+                      <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'supp' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div>
-                      <ul>
-                        <li><a href="/">Prices</a></li>
-                        <li><a href="/">Start Selling</a></li>
-                        <li><a href="/">Sign up</a></li>
-                        <li><a href="/">Login</a></li>
-                        <li><a href="/">Helpdesk</a></li>
-                        <li><a href="/">Contact us</a></li>
-                        <li><a href="/">Do Not Sell My Personal Information</a></li>
-                        <li><a href="/">GDPR</a></li>
+                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'supp')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
+                      <ul className="tw-mb-4">
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Prices</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Start Selling</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Sign up</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Login</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Helpdesk</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Contact us</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Do Not Sell My Personal Information</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px]"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">GDPR</a></li>
                       </ul>
                     </div>
                   </section>
                 </div>
                 <div>
-                  <section>
-                    <header>
-                      Press
+                  <section className="">
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => { setArrSection('press'); }}>
+                      <div className="tw-flex tw-items-center tw-justify-between">
+                        <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
+                          Press
+                        </h2>
+                      </div>
+                      <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'press' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div>
-                      <ul>
-                        <li><a href="/">Billlboard</a></li>
-                        <li><a href="/">Vulture</a></li>
-                        <li><a href="/">Forbes</a></li>
-                        <li><a href="/">Complex</a></li>
-                        <li><a href="/">Genius</a></li>
+                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'press')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
+                      <ul className="tw-mb-4">
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Vulture</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Billlboard</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Forbes</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Complex</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px]"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Genius</a></li>
                       </ul>
                     </div>
                   </section>
                 </div>
               </div>
-              <div>
+              <div className="tw-w-full lg:tw-w-[unset] tw-order-3">
                 <h1>Social Media</h1>
-                <ul>
-                  <li><a href="/">Youtube</a></li>
-                  <li><a href="/">instagram</a></li>
-                  <li><a href="/">Facebook</a></li>
-                  <li><a href="/">Twitter</a></li>
-                  <li><a href="/">Soundcloud</a></li>
+                <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Youtube</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">instagram</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Facebook</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Twitter</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Soundcloud</a></li>
                 </ul>
               </div>
             </section>
