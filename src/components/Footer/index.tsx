@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </section>
         </div>
-        <div>
+        <div className="tw-pb-0 sxlalt:">
           {/* Start 'er */}
           <div className="">
             <section className="tw-text-white tw-flex tw-flex-col lg:tw-flex-row">
@@ -51,7 +51,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="tw-flex tw-flex-col lg:tw-flex-row">
+              <div className="tw-flex tw-flex-col lg:tw-flex-row ">
                 <div>
                   <section>
                     <header>
