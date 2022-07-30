@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <div>
           {/* Start 'er */}
-          <div className="tw-hidden">
+          <div className="">
             <section className="tw-text-white tw-flex tw-flex-col lg:tw-flex-row">
               <div>
                 <h1>
