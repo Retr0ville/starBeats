@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useEffect, useState } from 'react';
 import {
@@ -136,43 +137,43 @@ const Footer = () => {
                 </div>
               </div>
               <div className="tw-w-full lg:tw-w-[unset] tw-order-3">
-                <h1>Social Media</h1>
+                <h1 className="tw-hidden lg:tw-block">Social Media</h1>
                 <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size="48.2px" />
+                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Youtube
                       </span>
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaInstagram className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size="48.2px" />
+                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaInstagram className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         instagram
                       </span>
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaFacebookF className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size="48.2px" />
+                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaFacebookF className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Facebook
                       </span>
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaTwitter className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size="48.2px" />
+                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaTwitter className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Twitter
                       </span>
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaSoundcloud className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size="48.2px" />
+                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaSoundcloud className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Soundcloud
                       </span>
