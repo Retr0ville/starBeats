@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useEffect, useState } from 'react';
-import { FaArrowDown, FaEnvelope } from 'react-icons/fa';
+import { FaArrowDown, FaEnvelope, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   const [mail, setMail] = useState('');
@@ -136,11 +136,46 @@ const Footer = () => {
               <div className="tw-w-full lg:tw-w-[unset] tw-order-3">
                 <h1>Social Media</h1>
                 <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Youtube</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">instagram</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Facebook</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Twitter</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Soundcloud</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
+                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube />
+                      <span className="tw-hidden lg:tw-flex">
+                        Youtube
+                      </span>
+                    </a>
+                  </li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
+                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube />
+                      <span className="tw-hidden lg:tw-flex">
+                        instagram
+                      </span>
+                    </a>
+                  </li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
+                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube />
+                      <span className="tw-hidden lg:tw-flex">
+                        Facebook
+                      </span>
+                    </a>
+                  </li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
+                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube />
+                      <span className="tw-hidden lg:tw-flex">
+                        Twitter
+                      </span>
+                    </a>
+                  </li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
+                    <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                      <FaYoutube />
+                      <span className="tw-hidden lg:tw-flex">
+                        Soundcloud
+                      </span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </section>
