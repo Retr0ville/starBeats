@@ -47,11 +47,11 @@ const Footer = () => {
                     required
                     type="email"
                     placeholder="Enter your e-mail"
-                    className="tw-w-full tw-text-xs tw-leading-[1.5] tw-font-[700] tw-text-white
+                    className="tw-w-full tw-text-[16px] tw-leading-[1.5] tw-font-[700] tw-text-white
                   placeholder:tw-text-zinc-500  tw-tracking-normal tw-bg-transparent tw-border-0 tw-border-none ssm:tw-mr-5 focus-visible:tw-outline-none"
                   />
                 </div>
-                <button type="submit" disabled={!validMail} onClick={() => { }} className="disabled:tw-text-[#ffffff33] tw-text-white tw-w-full tw-h-16 tw-mt-4 tw-text-[18px] tw-font-[500] tw-items-center tw-tracking-normal tw-bg-[#005ff8]  tw-border-0 tw-border-none tw-rounded-[5px] disabled:tw-bg-[#26262680] tw-cursor-auto ssm:tw-w-[112px] ssm:tw-min-w-[112px] ssm:tw-h-12 ssm:tw-mt-0 ssm:tw-text-[16px] ssm:tw-leading-[1.5]">
+                <button type="submit" disabled={!validMail} onClick={() => { }} className="disabled:tw-text-[#ffffff33] tw-text-white tw-w-full tw-h-16 tw-mt-4 tw-text-[18px] tw-font-[700] tw-items-center tw-tracking-normal tw-bg-[#005ff8]  tw-border-0 tw-border-none tw-rounded-[5px] disabled:tw-bg-[#26262680] tw-cursor-auto ssm:tw-w-[112px] ssm:tw-min-w-[112px] ssm:tw-h-12 ssm:tw-mt-0 ssm:tw-text-[16px] ssm:tw-leading-[1.5]">
                   Subscribe
                 </button>
               </form>
