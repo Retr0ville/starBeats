@@ -136,11 +136,11 @@ const Footer = () => {
               <div className="tw-w-full lg:tw-w-[unset] tw-order-3">
                 <h1>Social Media</h1>
                 <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Youtube</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">instagram</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Facebook</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Twitter</a></li>
-                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Soundcloud</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Youtube</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">instagram</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Facebook</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Twitter</a></li>
+                  <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Soundcloud</a></li>
                 </ul>
               </div>
             </section>
