@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import React, { useEffect, useState } from 'react';
-import { FaArrowDown, FaEnvelope, FaYoutube } from 'react-icons/fa';
+import {
+  FaArrowDown, FaEnvelope, FaInstagram, FaTwitter, FaYoutube, FaFacebookF, FaSoundcloud,
+} from 'react-icons/fa';
 
 const Footer = () => {
   const [mail, setMail] = useState('');
@@ -146,7 +148,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube />
+                      <FaInstagram />
                       <span className="tw-hidden lg:tw-flex">
                         instagram
                       </span>
@@ -154,7 +156,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube />
+                      <FaFacebookF />
                       <span className="tw-hidden lg:tw-flex">
                         Facebook
                       </span>
@@ -162,7 +164,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube />
+                      <FaTwitter />
                       <span className="tw-hidden lg:tw-flex">
                         Twitter
                       </span>
@@ -170,7 +172,7 @@ const Footer = () => {
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
-                      <FaYoutube />
+                      <FaSoundcloud />
                       <span className="tw-hidden lg:tw-flex">
                         Soundcloud
                       </span>
