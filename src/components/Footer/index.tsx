@@ -53,9 +53,9 @@ const Footer = () => {
         </div>
         <div className="tw-pb-0 sxlalt:tw-p-[0_0_30px] ssm:tw-p-[0_24px_20px] tw-relative tw-w-full tw-p-[0_15px_15px] tw-overflow-hidden tw-border-b-[1px] tw-border-b-solid tw-border-[#ffffff1f] lg:tw-border-b-0 lg:tw-border-none">
           {/* Start 'er */}
-          <div className="tw-w-full tw-max-w-1300px tw-m-auto">
-            <section className="tw-flex tw-items-start tw-flex-col lg:tw-flex-row tw-p-[40px_0] lg:tw-p-[48px_0_80px] tw-max-w-[320px] lg:tw-max-w-none tw-m-[0_auto] tw-border-b-0 tw-border-none lg:tw-m-0 lg:tw-border-b-[1px] lg:tw-border-b-solid lg:tw-border-[#ffffff1f] ">
-              <div className="tw-flex tw-justify-center tw-flex-col lg:tw-order-1 tw-order-2 tw-w-full lg:tw-w-unset tw-mb-8 lg:tw-mb-[unset] ">
+          <div className="tw-w-full tw-max-w-[1300px] tw-m-auto">
+            <section className="tw-flex tw-items-start tw-flex-col lg:tw-flex-row tw-p-[40px_0] lg:tw-p-[48px_0_80px] tw-max-w-[320px] lg:tw-max-w-none tw-m-[0_auto] tw-border-b-0 tw-border-none lg:tw-m-0 lg:tw-border-b-[1px] lg:tw-border-solid lg:tw-border-[#ffffff1f] ">
+              <div className="tw-flex tw-justify-center tw-flex-col lg:tw-order-1 tw-order-2 tw-w-full lg:tw-w-[unset] tw-mb-8 lg:tw-mb-[unset] ">
                 <h1 className="tw-hidden lg:tw-block tw-mb-4 tw-whitespace-nowrap tw-p-0 tw-text-[17px] tw-font-medium tw-leading-[1.65] tw-tracking-[.2px] tw-text-white">
                   Take Beats on the GO!
                 </h1>
@@ -71,7 +71,7 @@ const Footer = () => {
               <div className="tw-flex tw-flex-col lg:tw-flex-row tw-order-1 lg:tw-order-2 tw-mb-4 lg:tw-mb-[unset] tw-w-full tw-justify-evenly">
                 <div>
                   <section>
-                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => setArrSection('beats')}>
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => (arrSection === 'beats' ? setArrSection('') : setArrSection('beats'))}>
                       <div className="tw-flex tw-items-center tw-justify-between">
                         <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
                           Beatstars
@@ -79,7 +79,7 @@ const Footer = () => {
                       </div>
                       <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'beats' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'beats')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
+                    <div className={`tw-overflow-y-hidden ${(showSection || (arrSection === 'beats')) ? 'tw-h-full tw-max-h-full tw-block' : 'tw-h-0 tw-max-h-0 tw-hidden'}`}>
                       <ul className="tw-mb-4">
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">About Us</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Jobs</a></li>
@@ -92,7 +92,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <section>
-                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => setArrSection('supp')}>
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => (arrSection === 'supp' ? setArrSection('') : setArrSection('supp'))}>
                       <div className="tw-flex tw-items-center tw-justify-between">
                         <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
                           Support
@@ -100,15 +100,15 @@ const Footer = () => {
                       </div>
                       <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'supp' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'supp')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
-                      <ul className="tw-mb-4">
+                    <div className={`tw-overflow-y-hidden tw-w-full ${(showSection || (arrSection === 'supp')) ? 'tw-h-full tw-max-h-full tw-block' : 'tw-h-0 tw-max-h-0 tw-hidden'}`}>
+                      <ul className="tw-mb-4 tw-w-full">
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Prices</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Start Selling</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Sign up</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Login</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Helpdesk</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Contact us</a></li>
-                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Do Not Sell My Personal Information</a></li>
+                        <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[153px] tw-mb-3"><a href="/" className="tw-cursor-pointer  tw-flex tw-items-center tw-text-[#b8b8b8]">Do Not Sell My Personal Information</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px]"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">GDPR</a></li>
                       </ul>
                     </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <section className="">
-                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => { setArrSection('press'); }}>
+                    <header className="tw-flex tw-items-center tw-justify-between tw-mb-4" role="button" onKeyDown={() => { }} onClick={() => (arrSection === 'press' ? setArrSection('') : setArrSection('press'))}>
                       <div className="tw-flex tw-items-center tw-justify-between">
                         <h2 className="tw-mr-2 tw-p-0 tw-text-[17px] tw-font-medium tw-tracking-[.2px] tw-leading-[1.65] tw-text-white">
                           Press
@@ -124,7 +124,7 @@ const Footer = () => {
                       </div>
                       <FaArrowDown className={`tw-text-[12px] tw-text-white tw-transition-transform ${!showSection ? 'tw-inline-block' : 'tw-hidden'} ${arrSection === 'press' ? 'tw-rotate-180' : 'tw-rotate-0'}`} />
                     </header>
-                    <div className={`tw-overflow-y-hidden ${(!showSection || !(arrSection === 'press')) ? 'tw-h-0 tw-max-h-0 tw-hidden' : 'tw-h-full tw-max-h-full tw-block'}`}>
+                    <div className={`tw-overflow-y-hidden ${(showSection || (arrSection === 'press')) ? 'tw-h-full tw-max-h-full tw-block' : 'tw-h-0 tw-max-h-0 tw-hidden'}`}>
                       <ul className="tw-mb-4">
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Vulture</a></li>
                         <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-3"><a href="/" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">Billlboard</a></li>
@@ -137,7 +137,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="tw-w-full lg:tw-w-[unset] tw-order-3">
-                <h1 className="tw-hidden lg:tw-block">Social Media</h1>
+                <h1 className="tw-hidden lg:tw-block tw-text-white tw-mb-4 tw-p-0 tw-text-[17px] tw-font-medium tw-leading-[1.65] tw-tracking-[.2px]">Social Media</h1>
                 <ul className="tw-mb-4 tw-flex tw-justify-between lg:tw-flex-col lg:tw-justify-start">
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
                     <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
@@ -148,7 +148,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                    <a href="#icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
                       <FaInstagram className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         instagram
@@ -164,7 +164,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                    <a href="#icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
                       <FaTwitter className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Twitter
@@ -172,7 +172,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="tw-text-[14px] tw-leading-[1.71] tw-tracking-[.3px] tw-max-w-[150px] tw-mb-0 lg:tw-mb-3">
-                    <a href="#icons" id="icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
+                    <a href="#icons" className="tw-cursor-pointer tw-flex tw-items-center tw-text-[#b8b8b8]">
                       <FaSoundcloud className="lg:tw-text-[16px] lg:tw-mr-2 lg:tw-p-[unset] lg:tw-m-[unset] lg:tw-text-inherit lg:tw-rounded-[unset] lg:tw-shadow-none tw-p-3 tw-m-0 tw-text-[24px] tw-text-white tw-rounded-[5px] tw-bg-[#282828] lg:tw-bg-[transparent]" size={`${showSection ? '' : '48.2px'}`} />
                       <span className="tw-hidden lg:tw-flex">
                         Soundcloud
